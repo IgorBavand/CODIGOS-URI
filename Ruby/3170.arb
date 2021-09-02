@@ -1,0 +1,16 @@
+b = gets.chomp.to_i
+g = gets.chomp.to_i
+res = 0
+
+if g%2 != 0
+    g=g-1
+end
+
+g = g/2
+res = g-b
+
+if res > 0
+    puts("Faltam #{res} bolinha(s)")
+else
+    puts("Amelia tem todas bolinhas!")
+end
